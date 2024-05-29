@@ -1,0 +1,29 @@
+/* pdf-styles.css */
+.patient-info-title {
+    margin-top: -24px; /* Adjust this value as needed */
+    margin-bottom: 12;
+}
+
+.container2 {
+    margin-top: 50px;
+    margin-left: -15px;
+}
+
+.container3 {
+    margin-left: -13.5px;
+}
+
+.container1 {
+    margin-left: -12.5px;
+    background-color: transparent;
+}
+
+.custom-table {
+    margin-top: 25px;
+}
+
+.input-field1 {
+    margin-bottom: 10px;
+    border-color: gray;
+}
+

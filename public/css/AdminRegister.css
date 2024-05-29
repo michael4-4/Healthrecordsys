@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* REG ACC */
+body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-img {
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 90%;
+    height: 20%;
+}
+
+/* Form styles */
+.form-container {
+    width: 100%;
+    max-width: 350px; 
+    margin: auto;
+    text-align: center;
+}
+
+/* Form header styles */
+.form-container header {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+
+/* Form input styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-group label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+.form-group input, select {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-group select:hover{
+    border: 1.5px solid #036c5f;
+    box-shadow: 0 3px 6px rgba(19, 129, 91, 0.1); 
+}
+.hover-input:hover {
+    border: 1.5px solid #036c5f;
+    box-shadow: 0 0 2px rgba(0, 123, 255, 3);
+  }
+  .form-control:hover {
+    border-color: #036c5f; 
+    box-shadow: 0 3px 6px rgba(19, 129, 91, 0.1); 
+}
+.form-control:active,
+.form-control:focus {
+    border-color: #036c5f !important; 
+    box-shadow: 0 3px 6px rgba(16, 137, 77, 0.13);
+    outline: none !important; 
+}
+
+/* Additional style for responsiveness - adjust as needed */
+@media screen and (max-width: 600px) {
+    .form-group {
+        width: 100%;
+    }
+}
+/* Form button styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+button {
+    padding: 8px 95px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit {
+    background-color: #036c5f;
+    color: white;
+    border-radius: 6px;
+}
+.submit:hover {
+    background-color: #24a090;
+}
+/* Form link styles */
+.form-container p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.form-container p a {
+    text-decoration: underline;
+    color: #036c5f;
+}
+.form-container p a:hover {
+    color: #2840a9;
+    text-decoration: underline;
+}
+
+.toggle-password{
+    position: relative;
+}
+
+.pass {
+    position:absolute;
+    top: 61px;
+    transform: translateY(-271%);
+    right: 5px; /* Adjust as needed */
+}
+
+/*
+pass1
+    position: relative;
+    top: 101%;
+    transform: translateY(-47%);
+    right: 503px; /* Adjust as needed */
+
+
+/* Adjust the position of the eye icon button */
+.input-group-append {
+    position: relative;
+}
+
+/* Adjust the eye icon button */
+.toggle-password-confirm {
+    position: absolute;
+    top: 0;
+    right: 4px; /* Adjust as needed */
+    transform: translateY(-110%);
+    z-index: 1;
+}
+
+
+/* Inside your AdminRegister.css file */
+.password-strength-indicator  {
+    /* Adjust position to left side */
+    position: relative;
+    text-align: left;
+    bottom: -5px; /* Adjust as needed */
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+.match {
+    border: 3px solid #2E8B57; /* Green color for match */
+    box-shadow: 0 0 9px #2E8B57; /* Green glow effect */
+}
+
+.not-match {
+    border: 3px solid #FF6347; /* Red color for mismatch */
+    box-shadow: 0 0 9px #FF6347; /* Red glow effect */
+}
+
+/* Inside your AdminRegister.css file */
+.passwordMatchMessage-indicator  {
+    /* Adjust position to left side */
+    position: relative;
+    text-align: left;
+    bottom: -5px; /* Adjust as needed */
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+

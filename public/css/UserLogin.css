@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*LOGIN */
+body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-img {
+    width: 23%;
+    height: 18%;
+}
+
+.form-container {
+    width: 100%;
+    text-align: center;
+    position: fixed; /* or absolute */
+    top: 50%; /* adjust as needed */
+    left: 50%; /* adjust as needed */
+    transform: translate(-50%, -50%); /* center the form */
+    z-index: 1; /* Ensure the form stays on top */
+}
+
+/*Sweet alert*/
+.swal2-container {
+    position: fixed; /* or absolute */
+    top: 50%; /* adjust as needed */
+    left: 50%; /* adjust as needed */
+    transform: translate(-50%, -50%); /* center the Sweet Alert */
+    z-index: 2; /* Ensure the Sweet Alert is positioned above the form */
+    width: 100%;
+    height: 100%;
+}
+
+.form-container header {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+.hover-input:hover {
+    border: 1px solid #036c5f;
+    box-shadow: 0 0 2px rgba(0, 123, 255, 3);
+    outline: none !important;
+  }
+  
+.input-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group-text {
+    color: #000000;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    background-color: #E7E7E7;
+    border: 1px solid #aaa;
+    border-radius: 6px 0 0 6px;
+    padding: 8px;
+}
+
+.form-control {
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 0 6px 6px 0;
+    border: 2px solid #aaa;
+    padding: 8px;
+    width: 100%;
+    max-width: 350px;
+    flex: 1;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:hover {
+    border-color: #036c5f; 
+    box-shadow: 0 3px 6px rgba(19, 129, 91, 0.1); 
+}
+
+.form-control:active,
+.form-control:focus {
+    border-color: #036c5f !important; 
+    box-shadow: 0 3px 6px rgba(16, 137, 77, 0.13);
+    outline: none !important; 
+}
+
+.forgot-password {
+    margin-top: 8px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button {
+    padding: 8px 95px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: #036c5f;
+    color: white;
+    border-radius: 6px;
+}
+
+.submit:hover {
+    background-color: #24a090;
+}
+
+.input-group a {
+    margin-top: 18px; /* in adjust ko */
+    text-align: right;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #036c5f;
+    transition: color 0.3s;
+}
+
+.input-group a:hover {
+    color: #2840a9;
+}
+
+.form-container p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-container p a {
+  text-decoration: underline;
+  color: #036c5f; 
+}
+
+.form-container p a:hover {
+  color: #2840a9; 
+  text-decoration: underline; 
+}
+
+.input-group-text .fas.fa-envelope {
+    color: #036c5f;
+}
+
+.input-group-text .fas.fa-lock {
+    color: #036c5f;
+}
+
+.pass {
+    position: absolute;
+    top: 61px;
+    transform: translateY(-161%);
+    right: 491px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+/* Style for the checkbox itself */
+.remember-checkbox {
+    position: absolute;
+    right: 36%;
+    top: 55%;
+    transform: translateY(162%);
+    font-size: 0.91rem;
+
+}
+
+.remember-checkbox input[type="checkbox"] {
+    border: 1px solid grey ; /* Add a grey border to the checkbox */
+}
+
+.modal-title {
+    text-align: center !important;
+}
