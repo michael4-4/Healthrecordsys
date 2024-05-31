@@ -10,5 +10,8 @@ class Kernel
 {
     protected $routeMiddleware = [
         'role' => \App\Http\Middleware\CheckRole::class,
+        'web' => [
+            \App\Http\Middleware\HandleInertiaRequests::class,
+        ],
     ];
 }

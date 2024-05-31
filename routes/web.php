@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+//Inertia
+use Inertia\Inertia;
+
 // Admin use
 use App\Http\Controllers\AdminRegisterController;
 use App\Http\Controllers\AdminLoginController;
@@ -205,3 +209,18 @@ Route::get('/patient_treatment_record/{id}/{treatment_id}/download-pdf', [Downlo
 
 
 Route::get('/download-view-records-pdf', [DownloadViewRecordsController::class, 'downloadViewRecordsPdf'])->name('download.view.records.pdf');
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return Inertia::render('Welcome');
+});
