@@ -11,7 +11,7 @@ use Illuminate\Validation\ValidationException;
 
 
 
-class AuthAPI extends Controller
+class APIController extends Controller
 {
 
     public function register(Request $request)

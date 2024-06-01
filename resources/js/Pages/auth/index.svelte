@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import { router, useForm } from "@inertiajs/svelte";
     import {
         FormGroup,
         Input,
@@ -20,10 +19,6 @@
     let remember = false;
     let isLoading = false;
 
-    let form = useForm({
-        email: null,
-        password: null,
-    });
 
     function delay(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));

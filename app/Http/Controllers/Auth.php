@@ -22,6 +22,4 @@ class Auth extends Controller
         return Inertia::render('auth/register');
     }
 
-
-
 }

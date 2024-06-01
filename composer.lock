@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eba04bbb24b3180d2a6614993a886c4b",
+    "content-hash": "f0de227009c8cc3cb83ee1aeae5387cb",
     "packages": [
         {
             "name": "brick/math",
@@ -1049,6 +1049,156 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "inertiajs/inertia-laravel",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inertiajs/inertia-laravel.git",
+                "reference": "5675663d9619528544cc2dca60e0f8b9603980ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/5675663d9619528544cc2dca60e0f8b9603980ae",
+                "reference": "5675663d9619528544cc2dca60e0f8b9603980ae",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.74|^9.0|^10.0|^11.0",
+                "php": "^7.3|~8.0.0|~8.1.0|~8.2.0|~8.3.0",
+                "symfony/console": "^5.3|^6.0|^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench": "^6.4|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^8.0|^9.5.8|^10.4",
+                "roave/security-advisories": "dev-master"
+            },
+            "suggest": {
+                "ext-pcntl": "Recommended when running the Inertia SSR server via the `inertia:start-ssr` artisan command."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inertia\\ServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "./helpers.php"
+                ],
+                "psr-4": {
+                    "Inertia\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "https://reinink.ca"
+                }
+            ],
+            "description": "The Laravel adapter for Inertia.js.",
+            "keywords": [
+                "inertia",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/inertiajs/inertia-laravel/issues",
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/reinink",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-17T22:12:22+00:00"
+        },
+        {
+            "name": "izniburak/laravel-auto-routes",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/izniburak/laravel-auto-routes.git",
+                "reference": "7904f15a52a3a169cb5038b4d97039a7fe47ddb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/izniburak/laravel-auto-routes/zipball/7904f15a52a3a169cb5038b4d97039a7fe47ddb9",
+                "reference": "7904f15a52a3a169cb5038b4d97039a7fe47ddb9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "illuminate/routing": "^10.0",
+                "phpunit/phpunit": "^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Buki\\AutoRoute\\AutoRouteServiceProvider"
+                    ],
+                    "aliases": {
+                        "AutoRoute": "Buki\\AutoRoute\\AutoRouteFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Buki\\AutoRoute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "İzni Burak Demirtaş",
+                    "email": "info@burakdemirtas.org",
+                    "homepage": "https://buki.dev"
+                }
+            ],
+            "description": "Auto Route Generating (Auto-Discovery) Package for Laravel",
+            "homepage": "https://github.com/izniburak/laravel-auto-routes",
+            "keywords": [
+                "auto-route",
+                "laravel",
+                "route",
+                "route-discovery",
+                "route-generator",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/izniburak/laravel-auto-routes/issues",
+                "source": "https://github.com/izniburak/laravel-auto-routes/tree/v2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://buymeacoff.ee/izniburak",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/izniburak",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-26T18:11:44+00:00"
         },
         {
             "name": "laravel/framework",
