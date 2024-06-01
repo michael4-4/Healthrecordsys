@@ -9,7 +9,9 @@
         "a1comms/php-gds": "^4.2",
         "dompdf/dompdf": "^2.0",
         "inertiajs/inertia-laravel": "^1.2",
+        "izniburak/laravel-auto-routes": "^2.0",
         "laravel/framework": "^11.0",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5"
     },

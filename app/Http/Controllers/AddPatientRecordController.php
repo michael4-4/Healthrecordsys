@@ -8,6 +8,7 @@ use Illuminate\Validation\Rule;
 
 class AddPatientRecordController extends Controller
 {
+    
     // Method to show the form for adding a record
     public function showAddPatientRecordForm()
     {
