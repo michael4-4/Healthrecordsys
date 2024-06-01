@@ -34,43 +34,11 @@ return [
     | Supported: "session"
     |
     */
-/*
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'admins', // Use the 'admins' provider for web guard
-        ],
-    
-        // Other guards...
-    
-    ],
-    
-    'providers' => [
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Admin::class,
-            'table' => 'admins', // Specify the correct table name if it's different
-        ],
-    
-        // Other providers...
-    
-    ],
-*/
-  
+
     'guards' => [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
-        ],
-
-        'users' => [ // Add a new guard for admin authentication
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
-        'admins' => [ // Add a new guard for admin authentication
-            'driver' => 'session',
-            'provider' => 'admins',
         ],
     ],
 
@@ -97,18 +65,11 @@ return [
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
 
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\Admin::class),
-        ],
-
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
     ],
-
-
 
     /*
     |--------------------------------------------------------------------------
@@ -136,7 +97,6 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
-
     ],
 
     /*
